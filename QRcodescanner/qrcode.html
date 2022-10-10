@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code</title>
+    <link href="qrcode.css" rel="stylesheet" >
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <p class="head">Qr Code Generator</p>
+    </nav>
+
+    <div class="container">
+        <div class="one">
+            <h3>QR Code Generator</h3>
+            <p>QR codes allow smartphone users to access your website simply and quickly.</p><br>
+            <P>Enter Your URL below to generate a QR Code and download the image.</P>
+
+            <form action="" id="generate form">
+                <input class="break" id="url" type="url" placeholder="Enter a URL"><br>
+    
+                <select class="break" id="size">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300" selected>300x300</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x500</option>
+                    <option value="600">600x600</option>
+                </select><br>
+    
+                <button class="break" type="submit">Generate QR Code</button>
+            </form>
+    
+        </div>
+
+        
+        <div class="two">
+            <img src="IMAGE/QRCodeScanner.png" height="300px">
+        </div>
+    </div>
+    <!-- Generated QR -->
+    <div></div>
+    <!-- spinner -->
+    <div class="d-flex justify-content-center mt-5" id="spinner">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    <!-- QR Code Output -->
+    <div id="qrcode"></div>
+</body>
+</html>
